@@ -16,8 +16,14 @@
 # Ignore Byebug command history file.
 .byebug_history
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #I don't want to show my secrets
 /config/secrets.ymlgit 
 =======
 >>>>>>> Initial commit
+=======
+
+# I don't want to show my secrets
+/config/secrets.yml
+>>>>>>> Cleared git cache
