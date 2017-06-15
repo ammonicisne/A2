@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Project sub dash 1
 
 >This is the first project for CodeToSuccess
@@ -16,6 +17,9 @@
 -This marks the end
 =======
 # README
+=======
+# Anuhea Lol Application
+>>>>>>> Updated readme title
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
