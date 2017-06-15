@@ -4,7 +4,7 @@
 
 ## What will be covered in this project is as follows
 
-*Live chat engine
-*Blog
-*Portfolio
-*Drag and drop interface
+-Live chat engine
+-Blog
+-Portfolio
+-Drag and drop interface
