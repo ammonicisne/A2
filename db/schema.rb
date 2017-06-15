@@ -12,6 +12,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170615173518) do
 =======
 ActiveRecord::Schema.define(version: 20170614142947) do
@@ -19,6 +20,9 @@ ActiveRecord::Schema.define(version: 20170614142947) do
 =======
 ActiveRecord::Schema.define(version: 20170615170527) do
 >>>>>>> Integrated skills
+=======
+ActiveRecord::Schema.define(version: 20170615173530) do
+>>>>>>> Added portfolio items
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +36,9 @@ ActiveRecord::Schema.define(version: 20170615170527) do
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Added portfolio items
   create_table "portfolios", force: :cascade do |t|
     t.string   "title"
     t.string   "subtitle"
@@ -42,8 +49,11 @@ ActiveRecord::Schema.define(version: 20170615170527) do
     t.datetime "updated_at",  null: false
   end
 
+<<<<<<< HEAD
 =======
 >>>>>>> Integrated skills
+=======
+>>>>>>> Added portfolio items
   create_table "skills", force: :cascade do |t|
     t.string   "title"
     t.integer  "percent_utilized"

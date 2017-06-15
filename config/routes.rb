@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   resources :portfolios
 =======
 >>>>>>> STOP LOOKING AT ME
+=======
+  resources :portfolios
+>>>>>>> Added portfolio items
   get 'pages/home'
 
   get 'pages/about'
