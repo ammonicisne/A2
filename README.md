@@ -1,24 +1,10 @@
 # Project sub dash 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+>This is the first project for CodeToSuccess
 
-Things you may want to cover:
+## What will be covered in this project is as follows
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Live chat engine
+*Blog
+*Portfolio
+*Drag and drop interface
