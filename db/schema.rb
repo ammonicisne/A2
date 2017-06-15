@@ -11,10 +11,14 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170615173518) do
 =======
 ActiveRecord::Schema.define(version: 20170614142947) do
 >>>>>>> Initial commit
+=======
+ActiveRecord::Schema.define(version: 20170615170527) do
+>>>>>>> Integrated skills
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +31,7 @@ ActiveRecord::Schema.define(version: 20170614142947) do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   create_table "portfolios", force: :cascade do |t|
     t.string   "title"
     t.string   "subtitle"
@@ -37,6 +42,8 @@ ActiveRecord::Schema.define(version: 20170614142947) do
     t.datetime "updated_at",  null: false
   end
 
+=======
+>>>>>>> Integrated skills
   create_table "skills", force: :cascade do |t|
     t.string   "title"
     t.integer  "percent_utilized"
@@ -44,6 +51,9 @@ ActiveRecord::Schema.define(version: 20170614142947) do
     t.datetime "updated_at",       null: false
   end
 
+<<<<<<< HEAD
 =======
 >>>>>>> Initial commit
+=======
+>>>>>>> Integrated skills
 end
