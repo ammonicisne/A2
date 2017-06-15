@@ -3,4 +3,8 @@ some more content
 last items
 =======
 some content
+<<<<<<< HEAD
 >>>>>>> Updated content for file 2
+=======
+some more content
+>>>>>>> initial implementation of file2
