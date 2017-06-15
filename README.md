@@ -21,17 +21,24 @@
 # Anuhea Lol Application
 >>>>>>> Updated readme title
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a Ruby on Rails 5 application that allows users to create their own portfolios.
 
-Things you may want to cover:
+### Features
 
-* Ruby version
+- Real time chat engines for comments
+- Blog
+- Portfolio
+- Drag and rop interface
 
-* System dependencies
+### Code Example
 
-* Configuration
+```ruby
+def my_great_method
+  puts "here it is"
+end
+```
 
+<<<<<<< HEAD
 * Database creation
 
 * Database initialization
@@ -44,3 +51,8 @@ Things you may want to cover:
 
 * ...
 >>>>>>> Initial commit
+=======
+```javascript
+alert('Hi there');
+```
+>>>>>>> Updated readme with guide for markdown
