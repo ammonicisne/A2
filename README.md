@@ -29,8 +29,9 @@
 - Blog
 - Portfolio
 - Drag and rop interface
+- Frog
 
-### Code Example
+### Code Example 
 
 ```ruby
 def my_great_method
@@ -55,4 +56,7 @@ end
 ```javascript
 alert('Hi there');
 ```
+<<<<<<< HEAD
 >>>>>>> Updated readme with guide for markdown
+=======
+>>>>>>> Update1.1
