@@ -15,6 +15,9 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+<<<<<<< HEAD
 
 #I don't want to show my secrets
 /config/secrets.ymlgit 
+=======
+>>>>>>> Initial commit

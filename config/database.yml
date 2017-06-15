@@ -23,13 +23,21 @@ default: &default
 
 development:
   <<: *default
+<<<<<<< HEAD
   database: Projectsubdash1_development
+=======
+  database: AnuheaLol_development
+>>>>>>> Initial commit
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
+<<<<<<< HEAD
   #username: Projectsubdash1
+=======
+  #username: AnuheaLol
+>>>>>>> Initial commit
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +65,11 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+<<<<<<< HEAD
   database: Projectsubdash1_test
+=======
+  database: AnuheaLol_test
+>>>>>>> Initial commit
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +92,12 @@ test:
 #
 production:
   <<: *default
+<<<<<<< HEAD
   database: Projectsubdash1_production
   username: Projectsubdash1
   password: <%= ENV['PROJECTSUBDASH1_DATABASE_PASSWORD'] %>
+=======
+  database: AnuheaLol_production
+  username: AnuheaLol
+  password: <%= ENV['ANUHEALOL_DATABASE_PASSWORD'] %>
+>>>>>>> Initial commit
