@@ -1,1 +1,2 @@
-MVC - Model - View - Controller
+class Blog < ApplicationRecord
+end
