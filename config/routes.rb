@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   resources :portfolios
 <<<<<<< HEAD
 =======
@@ -15,12 +16,19 @@ Rails.application.routes.draw do
 
   get 'pages/contact'
 =======
+=======
+  resources :portfolios, except: [:show]
+  get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
+>>>>>>> Customized portfolio routes
   
-  get 'about', to: 'pages#about'
+  get 'about-me', to: 'pages#about'
   get 'contact', to: 'pages#contact'
+<<<<<<< HEAD
   
   
 >>>>>>> Configured custom routes for pages
+=======
+>>>>>>> Customized portfolio routes
 
 <<<<<<< HEAD
 =======
