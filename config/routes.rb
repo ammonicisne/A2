@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 <<<<<<< HEAD
 <<<<<<< HEAD
   resources :portfolios
+<<<<<<< HEAD
 =======
 >>>>>>> STOP LOOKING AT ME
 =======
@@ -13,6 +14,13 @@ Rails.application.routes.draw do
   get 'pages/about'
 
   get 'pages/contact'
+=======
+  
+  get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
+  
+  
+>>>>>>> Configured custom routes for pages
 
 <<<<<<< HEAD
 =======
@@ -20,5 +28,6 @@ Rails.application.routes.draw do
 =======
 >>>>>>> STOP LOOKING AT ME
   resources :blogs
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  root to: 'pages#home'
 end
