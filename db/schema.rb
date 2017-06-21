@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170615173518) do
 =======
 ActiveRecord::Schema.define(version: 20170614142947) do
@@ -27,6 +28,9 @@ ActiveRecord::Schema.define(version: 20170615173530) do
 =======
 ActiveRecord::Schema.define(version: 20170620171145) do
 >>>>>>> Integrated friendly routes
+=======
+ActiveRecord::Schema.define(version: 20170621143624) do
+>>>>>>> Updated status for enum
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,9 +38,10 @@ ActiveRecord::Schema.define(version: 20170620171145) do
   create_table "blogs", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.string   "slug"
+    t.integer  "status",     default: 0
     t.index ["slug"], name: "index_blogs_on_slug", unique: true, using: :btree
   end
 
