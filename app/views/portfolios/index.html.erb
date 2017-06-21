@@ -2,8 +2,8 @@
 
 <%= link_to "Create New Item", new_portfolio_path %>
 
-<% @portfolio_items.each do |portfolio_item| %>
-  <p><%=  portfolio_item.title %></p>
+<% @portfolio_item.each do |portfolio_item| %>
+  <p><%=  link_to portfolio_item.title, portfolio_path(portfolio_item.id) %></p>
   <p><%=  portfolio_item.subtitle %></p>
   <p><%=  portfolio_item.body %></p>
   <%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
