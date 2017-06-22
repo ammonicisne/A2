@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170615173518) do
 =======
 ActiveRecord::Schema.define(version: 20170614142947) do
@@ -31,6 +32,9 @@ ActiveRecord::Schema.define(version: 20170620171145) do
 =======
 ActiveRecord::Schema.define(version: 20170621143624) do
 >>>>>>> Updated status for enum
+=======
+ActiveRecord::Schema.define(version: 20170622154452) do
+>>>>>>> Integrated database relationship between topics and blog posts
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,7 +46,9 @@ ActiveRecord::Schema.define(version: 20170621143624) do
     t.datetime "updated_at",             null: false
     t.string   "slug"
     t.integer  "status",     default: 0
+    t.integer  "topic_id"
     t.index ["slug"], name: "index_blogs_on_slug", unique: true, using: :btree
+    t.index ["topic_id"], name: "index_blogs_on_topic_id", using: :btree
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -85,8 +91,18 @@ ActiveRecord::Schema.define(version: 20170621143624) do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Initial commit
 =======
 >>>>>>> Integrated skills
+=======
+  create_table "topics", force: :cascade do |t|
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "blogs", "topics"
+>>>>>>> Integrated database relationship between topics and blog posts
 end
