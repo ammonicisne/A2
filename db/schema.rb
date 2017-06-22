@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170615173518) do
 =======
 ActiveRecord::Schema.define(version: 20170614142947) do
@@ -39,6 +40,9 @@ ActiveRecord::Schema.define(version: 20170622154452) do
 =======
 ActiveRecord::Schema.define(version: 20170622164511) do
 >>>>>>> Implemented comcern for managing image data
+=======
+ActiveRecord::Schema.define(version: 20170622173938) do
+>>>>>>> Integrated technologies model
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -97,11 +101,22 @@ ActiveRecord::Schema.define(version: 20170622164511) do
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Initial commit
 =======
 >>>>>>> Integrated skills
 =======
+=======
+  create_table "technologies", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "portfolio_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["portfolio_id"], name: "index_technologies_on_portfolio_id", using: :btree
+  end
+
+>>>>>>> Integrated technologies model
   create_table "topics", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
@@ -109,5 +124,9 @@ ActiveRecord::Schema.define(version: 20170622164511) do
   end
 
   add_foreign_key "blogs", "topics"
+<<<<<<< HEAD
 >>>>>>> Integrated database relationship between topics and blog posts
+=======
+  add_foreign_key "technologies", "portfolios"
+>>>>>>> Integrated technologies model
 end
