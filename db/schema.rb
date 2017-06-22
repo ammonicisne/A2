@@ -16,6 +16,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170615173518) do
 =======
 ActiveRecord::Schema.define(version: 20170614142947) do
@@ -35,6 +36,9 @@ ActiveRecord::Schema.define(version: 20170621143624) do
 =======
 ActiveRecord::Schema.define(version: 20170622154452) do
 >>>>>>> Integrated database relationship between topics and blog posts
+=======
+ActiveRecord::Schema.define(version: 20170622164511) do
+>>>>>>> Implemented comcern for managing image data
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -88,6 +92,7 @@ ActiveRecord::Schema.define(version: 20170622154452) do
     t.integer  "percent_utilized"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.text     "badge"
   end
 
 <<<<<<< HEAD
