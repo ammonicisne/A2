@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   resources :portfolios
 <<<<<<< HEAD
 =======
@@ -17,6 +18,9 @@ Rails.application.routes.draw do
   get 'pages/contact'
 =======
 =======
+=======
+  devise_for :users
+>>>>>>> Implemented basic authentication
   resources :portfolios, except: [:show]
   get 'angular-items', to: 'portfolios#angular'
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
