@@ -8,7 +8,9 @@
       Body content Body content Body content Body content Body content Body content Body content Body content Body content Body content Body content
       Body content Body content Body content Body content Body content Body content Body content Body content Body content Body content Body content
       Body content Body content Body content Body content Body content Body content Body content Body content Body content Body content Body content
-      Body content Body content Body content Body content Body content"
+      Body content Body content Body content Body content Body content",
+      status: 0
+      
     )
   end
   
