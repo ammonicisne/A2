@@ -19,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170615173518) do
 =======
 ActiveRecord::Schema.define(version: 20170614142947) do
@@ -47,6 +48,9 @@ ActiveRecord::Schema.define(version: 20170622173938) do
 =======
 ActiveRecord::Schema.define(version: 20170626165337) do
 >>>>>>> Implemented basic authentication
+=======
+ActiveRecord::Schema.define(version: 20170628154348) do
+>>>>>>> Implemented devise
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
