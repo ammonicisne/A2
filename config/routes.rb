@@ -40,11 +40,19 @@ Rails.application.routes.draw do
 >>>>>>> Customized portfolio routes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> Initial commit
 =======
 >>>>>>> STOP LOOKING AT ME
   resources :blogs
+=======
+  resources :blogs do
+    member do
+      get :toggle_status
+    end  
+  end
+>>>>>>> Implemented regisration
   
   root to: 'pages#home'
 end
