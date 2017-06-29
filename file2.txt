@@ -1,14 +1,63 @@
-<<<<<<< HEAD
+
 some more content
 last items
-=======
+
 some content
-<<<<<<< HEAD
->>>>>>> Updated content for file 2
-=======
+
 some more content
-<<<<<<< HEAD
->>>>>>> initial implementation of file2
-=======
 last items
->>>>>>> finished file 2 feature
+
+some content
+
+
+
+some more content
+
+some more content
+last items
+
+some content
+
+some more content
+last items
+
+some content
+
+some more content
+last items
+
+some content
+
+some more content
+last items
+
+some content
+
+
+
+some more content
+
+some more content
+last items
+
+some content
+
+some more content
+last items
+
+some content
+
+
+
+some more content
+
+some more content
+last items
+
+some content
+
+
+
+some more content
+last items
+

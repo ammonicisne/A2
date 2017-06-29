@@ -29,11 +29,7 @@ class BlogsController < ApplicationController
 
     respond_to do |format|
       if @blog.save
-<<<<<<< HEAD
         format.html { redirect_to @blog, notice: 'Blog was successfully created.' }
-=======
-        format.html { redirect_to @blog, notice: 'Blog was successfully published.' }
->>>>>>> Initial commit
         format.json { render :show, status: :created, location: @blog }
       else
         format.html { render :new }
@@ -59,11 +55,7 @@ class BlogsController < ApplicationController
   def destroy
     @blog.destroy
     respond_to do |format|
-<<<<<<< HEAD
       format.html { redirect_to blogs_url, notice: 'Blog was successfully deleted.' }
-=======
-      format.html { redirect_to blogs_url, notice: 'Blog was removed.' }
->>>>>>> Initial commit
       format.json { head :no_content }
     end
   end
