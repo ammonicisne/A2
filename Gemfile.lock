@@ -171,11 +171,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
-<<<<<<< HEAD
-  devise (~> 4.2)
-=======
   devise (~> 4.3)
->>>>>>> Installed devise gem
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
