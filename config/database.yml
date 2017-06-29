@@ -23,21 +23,13 @@ default: &default
 
 development:
   <<: *default
-<<<<<<< HEAD
-  database: Projectsubdash1_development
-=======
   database: AnuheaLol_development
->>>>>>> Initial commit
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-<<<<<<< HEAD
-  #username: Projectsubdash1
-=======
   #username: AnuheaLol
->>>>>>> Initial commit
 
   # The password associated with the postgres role (username).
   #password:
