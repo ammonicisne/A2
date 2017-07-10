@@ -12,6 +12,8 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     
+    <%= render "shared/nav", location: 'bottom' %>
+    
     <% if current_user %>
       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
     <% else %>
@@ -19,9 +21,10 @@
       <%= link_to "Login", new_user_session_path %>
     <% end %>
     
-    <%= yield %>
+    <%= render "shared/nav", location: 'bottom' %>
     
-      <%= render "shared/nav", location: 'bottom' %>
+    <%= source_helper ("blog") %>
+    
     
   </body>
 </html>
