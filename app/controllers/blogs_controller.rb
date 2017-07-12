@@ -6,12 +6,15 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.all
+    @blogs = special_blogs
+    @page_title= "My Portfolio Blog"
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @page_title = @blog.title
+    @seo_keywords = @blog.body
   end
 
   # GET /blogs/new
@@ -24,7 +27,7 @@ class BlogsController < ApplicationController
   end
 
   # POST /blogs
-  # POST /blogs.json
+  # POST /blogs.json  
   def create
     @blog = Blog.new(blog_params)
 
