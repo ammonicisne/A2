@@ -15,5 +15,9 @@ module ApplicationHelper
       content_tag(:p, greeting, class: 'source-generator')
     end    
   end
+  
+  def copyright_generator
+    ammonViewTool::Renderer.copyright 'ammon Cisneros', 'All rights reserved'
+  end
 end
 
