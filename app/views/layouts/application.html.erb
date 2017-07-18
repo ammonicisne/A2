@@ -2,11 +2,14 @@
 <html>
   <head>
     <title>AnuheaLol</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
     <%= csrf_meta_tags %>
     
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
-    <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -27,6 +30,6 @@
     
     <%= copyright_generator %>
     
-    <%= source_helper ("applicaton")%>
+    <%= source_helper("applicaton")%>
   </body>
 </html>

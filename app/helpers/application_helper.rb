@@ -17,7 +17,7 @@ module ApplicationHelper
   end
   
   def copyright_generator
-    ammonViewTool::Renderer.copyright 'ammon Cisneros', 'All rights reserved'
+    AmmonViewTool::Renderer.copyright 'ammon Cisneros', 'All rights reserved'
   end
 end
 
