@@ -57,3 +57,5 @@ gem 'devise', '~> 4.3'
 
 gem 'ammon_view_tool', git: 'https://github.com/ammonicisne/ammon_view_tool'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+
+gem 'petergate', '~> 1.7', '>= 1.7.5'
