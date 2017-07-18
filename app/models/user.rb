@@ -4,7 +4,7 @@ class User < ApplicationRecord
   ## The :user role is added by default and shouldn't be included in this list.             ##
   ## The :root_admin can access any page regardless of access settings. Use with caution!   ##
   ## The multiple option can be set to true if you need users to have multiple roles.       ##
-  petergate(roles: [:admin, :editor], multiple: false)                                      ##
+  petergate(roles: [:site_admin], multiple: false)                                      ##
   ############################################################################################ 
  
 
@@ -26,13 +26,4 @@ class User < ApplicationRecord
          def last_name
            self.name.split.last
          end
-end
-
-def get_facebook_messages
-  begin
-    contacts_fb
-    @messages = retrieves_messages
-  rescue => e
-    flash[:error] = "Error occured, contacting facaebook :{e}"
-  end
 end
