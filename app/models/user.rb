@@ -8,7 +8,10 @@ class User < ApplicationRecord
          
          
          def first_name
-           self.name.split.first
+           begin
+             self.name.split.first
+             rescue
+           end
          end
          
          def last_name
@@ -16,3 +19,11 @@ class User < ApplicationRecord
          end
 end
 
+def get_facebook_messages
+  begin
+    contacts_fb
+    @messages = retrieves_messages
+  rescue => e
+    flash[:error] = "Error occured, contacting facaebook :{e}"
+  end
+end
