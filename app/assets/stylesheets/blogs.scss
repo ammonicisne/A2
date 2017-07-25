@@ -1,13 +1,5 @@
-// Place all the styles related to the Blogs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-blogs {
-  background-color: green;
-}
-
-.bottom a {
-  color: yellow;
-}
+@import "bootstrap";
+@import "font-awesome";
 
 /*
  * Globals
@@ -174,4 +166,12 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+/*
+*  Custom styles
+*/
+
+.social-links li {
+  font-size: 2.5em;
 }
