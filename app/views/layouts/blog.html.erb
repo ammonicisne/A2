@@ -33,11 +33,12 @@
             <%= link_to "Login", new_user_session_path %>
           <% end %>
           
-          <!-- Start of Sidebar-->
-                <%= render 'shared/blog_nav' %>
-          <!-- End of Sidebar-->
+          <%= render 'shared/blog_nav' %>
+
         </div>
-              <%= render 'shared/blog_footer' %>
+          <%= render 'shared/blog_footer' %>
+          
+          <%= alerts %>
           
           <%= source_helper ("blog") %>
     </div>
