@@ -6,8 +6,20 @@
   <p>
     <%= @blog.body %>
   </p>
+  
+  <%= unless current_user.is_a? GuestUser%>
+    <%= form_for @comment, url: '#' do |f| %>
+      <div class="form-group" %>
+        <% f.label :content %>
+        <% f.text_area :content%>
+      </div>
+      
+      <%= f.submit 'Post Comment', class: 'btn btn-primary'%>
+    <% end %>
+  <% end %>
+  
+  <% = render @blog.comments %>
 
 </div>
 
 
-<%= link_to 'Back', blogs_path if logged_in?(:site_admin) %>
