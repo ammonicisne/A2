@@ -1,7 +1,7 @@
 <div class="col-sm-8 blog-main">
 
   <h2><%= @blog.title %></h2>
-  <%= link_to 'Edit', edit_blog_path(@blog) %>
+  <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
             
   <p>
     <%= @blog.body %>
@@ -9,8 +9,9 @@
   
   <% = render 'comments/comment_form'%>
   
-  <% = render @blog.comments %>
-
+  <div id="comments" data-blog-id="<%= @blog.id %>"
+    <% = render @blog.comments %>
+  </div>
 </div>
 
 
