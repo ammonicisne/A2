@@ -6,12 +6,22 @@
   <% end %>
 
   <div class="form-group">
-    <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control', placeholder: 'Title' %>
   </div>
 
   <div class="form-group">
-    <%= f.label :body %>
+  <%= f.label :topic_id %>
+  <%= f.collection_select(:topic_id, Topic.all, :id, :title,
+                            {
+                              selected: blog.topic.id,
+                              include_blank: true
+                            },
+                            class: 'form-control'
+                          )
+    %>
+  </div>
+
+  <div class="form-group">
     <%= f.text_area :body, class: 'form-control', rows: 15, value: 'Content' %>
   </div>
 
