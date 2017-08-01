@@ -1,17 +1,34 @@
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-                          <%= nav_helper 'nav-link', 'span' %>
-
-              
-              
-                  <% if current_user %>
-                  <%= link_to "Logout", destroy_user_session_path, method: :delete 'nav-link'%>
-                  <% else %>
-                  <%= link_to "Register", new_user_registration_path 'nav-link'%>
-                  <%= link_to "Login", new_user_session_path 'nav-link'%>
-                  <% end %>
-          
-        </nav>
-      </div>
+<nav class="navbar navbar-toggleable-md navbar-light bf-faded blog-nav">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="
+  #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="container">
+    <%= link_to "Ammon Cisneros", root_path, class: 'navbar-brand' %>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <%= nav_helper 'nav-link', 'li' %>
+        <%= nav_helper 'nav-link' %>
+      </ul>
     </div>
+  </div>
+</nav>
+
+
+
+<div class="blog-masthead">
+  <div class="container">
+    <nav class="nav blog-nav">
+        <%= nav_helper 'nav-link', 'span' %>
+                      
+        <% if current_user %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete 'nav-link'%>
+        <% else %>
+        <%= link_to "Register", new_user_registration_path 'nav-link'%>
+        <%= link_to "Login", new_user_session_path 'nav-link'%>
+        <% end %>
+    </nav>
+  </div>
+</div>
